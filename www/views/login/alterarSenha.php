@@ -86,7 +86,7 @@
 
                 <div class="col-lg-3 col-md-6 mb-4">
                     <h5 class="text-uppercase">Contato</h5>
-                    <p>Email: laborhubconection.com</p>
+                    <p>Email: laborhubconection@gmail.com</p>
                     <p>Telefone: (62) 9 9649-6240</p>
                 </div>
 

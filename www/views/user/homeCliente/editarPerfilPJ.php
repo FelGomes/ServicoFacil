@@ -15,7 +15,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    
+
 
 </head>
 
@@ -124,7 +124,7 @@
                             <div class="fotoPerfilEdit">
                                 <div class="infoDados">
                                     <div class="editPerfil">
-                                        <img class="text-center"  id="previewImagem" value="<?= $_POST['usuarios_imagem'] ?? '' ?>" src="<?= base_url($pessoaJuridica->usuarios_imagem) ?>" alt="">
+                                        <img class="text-center" id="previewImagem" value="<?= $_POST['usuarios_imagem'] ?? '' ?>" src="<?= base_url($pessoaJuridica->usuarios_imagem) ?>" alt="">
 
                                     </div>
                                     <div class="buttonPerfil">
@@ -145,7 +145,7 @@
                             </div>
 
                             <!-- Cadastro de pessoa fisica -->
-                           <h5 class="text-start"> <i class="bi bi-building-fill fs-3"></i> Dados Empresarial</h5>
+                            <h5 class="text-start"> <i class="bi bi-building-fill fs-3"></i> Dados Empresarial</h5>
                             <div class="row">
 
                                 <div class="col-md-6 mt-4 mb-2">
@@ -193,7 +193,7 @@
                                                     <div class="botaoModalDeletar mt-5">
                                                         <button type="button" class="btn-negar" data-bs-dismiss="modal"> Não</button>
 
-                                                        <button type="button" onclick="window.location.href='<?= base_url('usuario/DesativarConta/' . $pessoaJuridica->usuarios_id) ?>'"  class="btn-finalizar">Sim</button>
+                                                        <button type="button" onclick="window.location.href='<?= base_url('usuario/DesativarConta/' . $pessoaJuridica->usuarios_id) ?>'" class="btn-finalizar">Sim</button>
                                                     </div>
 
 
@@ -360,7 +360,7 @@
 
 
 
- <footer class="bg-dark text-center text-white py-4">
+    <footer class="bg-dark text-center text-white py-4">
         <div class="container">
 
             <div class="row">
@@ -373,7 +373,7 @@
 
                 <div class="col-lg-3 col-md-6 mb-4">
                     <h5 class="text-uppercase">Contato</h5>
-                    <p>Email: laborhubconection.com</p>
+                    <p>Email: laborhubconection@gmail.com</p>
                     <p>Telefone: (62) 9 9649-6240</p>
                 </div>
 
@@ -409,7 +409,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-        <script src="<?= base_url('Public/Js/timeAlert.js') ?>"></script>
+    <script src="<?= base_url('Public/Js/timeAlert.js') ?>"></script>
 
 
     <script>
