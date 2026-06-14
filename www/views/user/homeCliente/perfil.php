@@ -83,7 +83,7 @@
 
         <div class="topo mt-3">
             <!-- <div class="logo "> -->
-            <a href="#" class="logo-link navbar-brand"> <img src="<?= base_url('Public/template/Images/Texto do seu parágrafo(3).png') ?>" class="logo" alt="Foto Escolhida"> </a>
+            <a href="<?= base_url('user/homeCliente/index') ?>" class="logo-link navbar-brand"> <img src="<?= base_url('Public/template/Images/Texto do seu parágrafo(3).png') ?>" class="logo" alt="Foto Escolhida"> </a>
             <!-- </div> -->
 
             <div class="imagem">

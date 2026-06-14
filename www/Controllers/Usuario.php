@@ -278,6 +278,18 @@ class Usuario extends RenderView
 
         ];
 
+        $email = $values['usuarios_email'];
+        $whereEmailExistente = "usuarios_email = '$email'";
+
+        if ($this->usuario->select(null, $whereEmailExistente)->fetchAll(PDO::FETCH_OBJ)) {
+            $_SESSION['msg'] = [
+                'texto' => 'Email ja cadastrado',
+                'color' => 'danger',
+            ];
+
+            return $this->loadView('login/cadastroCliente', $data);
+        }
+
 
 
         if (empty($values['usuarios_email'])) {
