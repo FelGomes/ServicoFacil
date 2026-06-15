@@ -233,7 +233,7 @@
 
                             <div class="col-md-6 mt-4 mb-2">
                                 <label for="pj_cnpj">CNPJ</label>
-                                <input type="text" name="pj_cnpj" id="pj_cnpj" placeholder="Digite seu CNPJ" class="form-control cpf" required value="<?= $_POST['pj_cnpj'] ?? '' ?>">
+                                <input type="text" name="pj_cnpj" id="pj_cnpj" placeholder="Digite seu CNPJ" class="form-control cnpj" required value="<?= $_POST['pj_cnpj'] ?? '' ?>">
                             </div>
 
                             <div class="col-md-6 mt-4 mb-2">
@@ -353,7 +353,7 @@
 
                 <div class="col-lg-3 col-md-6 mb-4">
                     <h5 class="text-uppercase">Contato</h5>
-                   <p>Email: laborhubconection@gmail.com</p>
+                    <p>Email: laborhubconection@gmail.com</p>
                     <p>Telefone: (62) 9 9649-6240</p>
                 </div>
 
@@ -392,6 +392,17 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script src="<?= base_url('Public/Js/timeAlert.js') ?>"></script>
+
+
+    <!-- Linkas para mascaramento -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <script>
+        $('.cpf').mask('000.000.000-00');
+        $('.cnpj').mask('00.000.000/0000-00');
+    </script>
+
 
 
     <script>
