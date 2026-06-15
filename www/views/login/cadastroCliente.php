@@ -45,7 +45,7 @@
         <!--  -->
         <div class="container mt-3 mb-5 border">
             <div class="row">
-                <h4 class="text-center mt-3">Preencha seus dados pessoais e endereço - Cliente</h4>
+                <h4 class="text-center mt-3"><a href="<?= base_url('usuario/escolherUsuario') ?>"> <i class="bi bi-arrow-left"></i></a> Preencha seus dados pessoais e endereço - Cliente</h4>
                 <h5 class="text-center mt-5">Foto de perfil</h5>
                 <form action="<?= base_url('usuario/cadastrarCliente') ?>" method="post" enctype="multipart/form-data"> <!--Formulario para enviou de validação de dados -->
                     <div class="text-center imagem perfil">
@@ -365,7 +365,7 @@
     </main>
 
 
-     <footer class="bg-dark text-center text-white py-4">
+    <footer class="bg-dark text-center text-white py-4">
         <div class="container">
 
             <div class="row">
@@ -417,6 +417,16 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script src="<?= base_url('Public/Js/timeAlert.js') ?>"></script>
+
+
+    <!-- Linkas para mascaramento -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <script>
+        $('.cpf').mask('000.000.000-00');
+        $('.cnpj').mask('00.000.000/0000-00');
+    </script>
 
 
     <script>

@@ -509,16 +509,16 @@ class Usuario extends RenderView
                     return $this->loadView('login/cadastroCliente', $data);
                 }
 
-                if (empty($valuesPj['pf_dataNascimento'])) {
+                if (empty($valuesPj['pj_dataFundacao'])) {
                     $_SESSION['msg'] = [
-                        'texto' => 'Informe sua data de nascimento!',
+                        'texto' => 'Informe a data fundação da empresa',
                         'color' => 'danger',
                     ];
                 }
 
-                if (!preg_match('/^[0-9()\-\s]+$/', $valuesPj['pj_cnpj'])) {
+                if (!preg_match('/^[0-9.\/\-\s]+$/', $valuesPj['pj_cnpj'])) {
                     $_SESSION['msg'] = [
-                        'texto' => 'CPF inválido',
+                        'texto' => 'CNPJ inválido',
                         'color' => 'danger',
                     ];
 
@@ -529,7 +529,7 @@ class Usuario extends RenderView
 
                 if (empty($valuesPj['pj_cnpj'])) {
                     $_SESSION['msg'] = [
-                        'texto' => 'Informe seu CPF!',
+                        'texto' => 'Informe seu CNPJ!',
                         'color' => 'danger',
                     ];
 
@@ -538,7 +538,7 @@ class Usuario extends RenderView
 
                 if ((strlen($valuesPj['pj_cnpj']) > 18) || (strlen($valuesPj['pj_cnpj']) < 14)) {
                     $_SESSION['msg'] = [
-                        'texto' => 'Limite de caracter não permitido para o campo de CPF',
+                        'texto' => 'Limite de caracter não permitido para o campo de CNPJ',
                         'color' => 'danger',
                     ];
 

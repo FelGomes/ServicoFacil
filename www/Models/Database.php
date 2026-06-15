@@ -108,7 +108,7 @@ class Database
     {
         $dimensao = getimagesize($usuario_imagem['tmp_name']);
 
-        if ($dimensao[0] < 400 || $dimensao[1] < 400) {
+        if ($dimensao[0] < 200 || $dimensao[1] < 200) {
             return false;
         } else {
             return true;

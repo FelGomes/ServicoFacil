@@ -42,7 +42,7 @@
 
         <div class="container mt-3 mb-5 border">
             <div class="row">
-                <h4 class="text-center mt-3">Preencha seus dados pessoais e endereço - Profissional</h4>
+                <h4 class="text-center mt-3"><a href="<?= base_url('usuario/escolherUsuario') ?>"> <i class="bi bi-arrow-left"></i></a> &nbsp;Preencha seus dados pessoais e endereço - Profissional</h4>
                 <h5 class="text-center mt-5">Foto de perfil</h5>
 
                 <form action="<?= base_url('usuario/continuacaoProfissional') ?>" method="post" enctype="multipart/form-data"> <!--Formulario para enviou de validação de dados -->

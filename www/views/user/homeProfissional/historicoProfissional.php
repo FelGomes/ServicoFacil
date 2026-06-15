@@ -192,7 +192,7 @@
 
                 <div style="margin-top: 150px;">
 
-                    <h4 class="text-center"> Não há serviço prestado anteriormente! </h4>
+                    <h6 class="text-center"> Não há serviço prestado anteriormente! </h6>
                 </div>
 
             <?php else: ?>
@@ -261,7 +261,7 @@
 
                 <div style="margin-top: 150px;">
 
-                    <h4 class="text-center"> Não há serviço recusado anteriormente! </h4>
+                    <h6 class="text-center"> Não há serviço recusado anteriormente! </h6>
                 </div>
 
 
