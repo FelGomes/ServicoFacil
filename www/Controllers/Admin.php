@@ -129,7 +129,7 @@ class Admin extends RenderView
             "endereco_complemento" => $_POST['endereco_complemento'],
             "endereco_numero" => $_POST['endereco_numero'],
             "endereco_cidade" => $_POST['endereco_cidade'],
-            "endereco_uf" => $_POST['endereco_uf'],
+            "endereco_uf" => $_POST['endereco_uf']?? $detalharUsuariosPF->endereco_uf,
         ];
 
         $whereEndereco = "endereco_usuarios_id = '$usuarios_id'";
