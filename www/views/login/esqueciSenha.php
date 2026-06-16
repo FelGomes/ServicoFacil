@@ -47,14 +47,20 @@
                 <h5 class="mb-2">Informe seu email para alterar sua senha!</h5>
             </div>
             <div class="row ">
-                <form action="<?= base_url('login/enviarEmail') ?>" method="post">
+                <form action="<?= base_url('login/enviarEmail') ?>" id="formemail" method="post">
                     <div class="campos">
                         <div class="col-md-12 mt-3 mb-4">
                             <label for="usuarios_nome">Email</label>
                             <input type="email" name="usuarios_email" id="usuarios_email" placeholder="Digite seu email" class="login form-control" required>
 
                         </div>
-                        <input type="submit" class="btn-submit mt-5" name="enviar" value="Entrar">
+                        <div id="loadingSolicitacao" class="text-center mt-3" style="display:none;">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Carregando...</span>
+                            </div>
+                            <p class="mt-2">Enviando email...</p>
+                        </div>
+                        <input type="submit" id="btnEnviar" class="btn-submit mt-5" name="enviar" value="Entrar">
                         <input type="button" class="btn-voltar mt-3 mb-4" onclick="window.location.href='<?= base_url('login') ?>'" name="voltar" value="Voltar">
 
                     </div>
@@ -66,7 +72,7 @@
     </main>
 
 
-      <footer class="bg-dark text-center text-white py-4">
+    <footer class="bg-dark text-center text-white py-4">
         <div class="container">
 
             <div class="row">
@@ -107,6 +113,19 @@
                 </div>
             </div>
     </footer>
+
+    <script>
+        document.getElementById('formemail').addEventListener('submit', function() {
+
+            // Mostra o spinner
+            document.getElementById('loadingSolicitacao').style.display = 'block';
+
+            // Desabilita o botão
+            const btn = document.getElementById('btnEnviar');
+            btn.disabled = true;
+            btn.innerHTML = 'Enviando...';
+        });
+    </script>
 
 
 
